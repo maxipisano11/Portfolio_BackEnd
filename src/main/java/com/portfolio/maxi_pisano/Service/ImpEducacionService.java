@@ -3,9 +3,9 @@ package com.portfolio.maxi_pisano.Service;
 
 import com.portfolio.maxi_pisano.Entity.Educacion;
 import com.portfolio.maxi_pisano.Repository.IEducacionRepository;
+import jakarta.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
-import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

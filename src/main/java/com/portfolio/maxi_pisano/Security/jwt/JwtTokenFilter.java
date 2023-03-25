@@ -2,11 +2,11 @@
 package com.portfolio.maxi_pisano.Security.jwt;
 
 import com.portfolio.maxi_pisano.Security.Service.UserDetailsServiceImpl;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 
 public class JwtTokenFilter extends OncePerRequestFilter{
-     private final static Logger logger = LoggerFactory.getLogger(JwtEntryPoint.class);
+     private final static Logger loggerO = LoggerFactory.getLogger(JwtEntryPoint.class);
      
      @Autowired
      JwtProvider jwtProvider;
@@ -36,7 +36,7 @@ public class JwtTokenFilter extends OncePerRequestFilter{
                 SecurityContextHolder.getContext().setAuthentication(auth);
             } 
         }catch (Exception e){
-            logger.error("Falló el método doFilterInternal");
+            loggerO.error("Falló el método doFilterInternal");
         }
         filterChain.doFilter(request, response);
     }
