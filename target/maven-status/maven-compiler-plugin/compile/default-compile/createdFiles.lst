@@ -1,6 +1,8 @@
 com\portfolio\maxi_pisano\Controller\ExperienciaController.class
+com\portfolio\maxi_pisano\Service\ImpSkillsService.class
 com\portfolio\maxi_pisano\WebConfig.class
 com\portfolio\maxi_pisano\Entity\Persona.class
+com\portfolio\maxi_pisano\Entity\Skills.class
 com\portfolio\maxi_pisano\MaxiPisanoApplication.class
 com\portfolio\maxi_pisano\Security\Repository\iRolRepository.class
 com\portfolio\maxi_pisano\Security\jwt\JwtEntryPoint.class
@@ -12,6 +14,7 @@ com\portfolio\maxi_pisano\Security\jwt\JwtTokenFilter.class
 com\portfolio\maxi_pisano\Security\jwt\JwtProvider.class
 com\portfolio\maxi_pisano\Security\Repository\iUsuarioRepository.class
 com\portfolio\maxi_pisano\Security\Dto\JwtDto.class
+com\portfolio\maxi_pisano\Repository\ISkillsRepository.class
 com\portfolio\maxi_pisano\Security\Entity\UsuarioPrincipal.class
 com\portfolio\maxi_pisano\Security\Service\UsuarioService.class
 com\portfolio\maxi_pisano\Dto\dtoEducacion.class
@@ -22,10 +25,12 @@ com\portfolio\maxi_pisano\Entity\Experiencia.class
 com\portfolio\maxi_pisano\Security\Dto\NuevoUsuario.class
 com\portfolio\maxi_pisano\Controller\EducacionController.class
 com\portfolio\maxi_pisano\Controller\PersonaController.class
+com\portfolio\maxi_pisano\Dto\dtoPersona.class
 com\portfolio\maxi_pisano\Dto\dtoExperiencia.class
 com\portfolio\maxi_pisano\Repository\IExperienciaRepository.class
 com\portfolio\maxi_pisano\Security\MainSecurity.class
-com\portfolio\maxi_pisano\Interface\IPersonaService.class
+com\portfolio\maxi_pisano\Dto\dtoSkills.class
+com\portfolio\maxi_pisano\Controller\SkillsController.class
 com\portfolio\maxi_pisano\Security\Service\RolService.class
 com\portfolio\maxi_pisano\Service\ImpEducacionService.class
 com\portfolio\maxi_pisano\Entity\Educacion.class
