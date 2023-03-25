@@ -1,7 +1,6 @@
 
 package com.portfolio.maxi_pisano.Security;
 
-import com.portfolio.maxi_pisano.Security.Service.UserDetailsServiceImpl;
 import com.portfolio.maxi_pisano.Security.jwt.JwtEntryPoint;
 import com.portfolio.maxi_pisano.Security.jwt.JwtTokenFilter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,9 +22,6 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableWebSecurity
 @EnableMethodSecurity
 public class MainSecurity {
-    @Autowired
-    UserDetailsServiceImpl userDetailsServiceImpl;
-
     @Autowired
     JwtEntryPoint jwtEntryPoint;
 
